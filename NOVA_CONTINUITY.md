@@ -6,13 +6,13 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 ## Repository state
 
-- Branch `main` tracks `origin/main` at commit `b96b0869b89699fc8dc9cf173b562284134a39b6`, `Update continuity after Theory Gate 1 publication`.
+- Branch `main` tracks `origin/main` at commit `ab864e5eddde90675588ea95544b19afbb3977e4`, `Complete Simulation Gate 1`.
 - The novelty review and Theory Gate 1 are published and verified.
-- Simulation Gate 1 changes are local and uncommitted. No push has been performed for this gate.
+- Simulation Gate 1 is published and verified with verdict **HOLD**. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
 
 ## Current objective
 
-Review the bounded 2D Simulation Gate 1 `HOLD` result before authorizing any refinement, 3D work, or paper drafting.
+The next planned research phase is Simulation Gate 1B: Singularity-State Information Ceiling. It has not begun and requires separate authorization.
 
 ## Current state
 
@@ -40,6 +40,7 @@ Review the bounded 2D Simulation Gate 1 `HOLD` result before authorizing any ref
 - Simulation Gate 1 ran 2,880 fixed-seed trials across 40, 30, 20, and 10 dB SNR and nine complex-gain settings per SNR.
 - Internal checks passed for zero location, gain invariance, Fisher symmetry, Fisher positive semidefiniteness, and estimator sanity.
 - Simulation Gate 1 verdict: **HOLD**.
+- Simulation Gate 1 publication, commit identity, clean state, and remote synchronization were verified at `ab864e5eddde90675588ea95544b19afbb3977e4`.
 
 ## Open issues / risks
 
@@ -50,9 +51,9 @@ Review the bounded 2D Simulation Gate 1 `HOLD` result before authorizing any ref
 - Theory Gate 1 verdict: **CONDITIONAL PASS**.
 - Strongest positive result: local identifiability is achievable for restricted models when the defined feature coordinates yield a full-column-rank, noise-weighted sensitivity matrix.
 - Strongest failure risk: a state extracted from the same complete field cannot exceed full-field information, while near-singular spatial Jacobians amplify localization noise and generic 3D scalar-field zeros form lines rather than isolated points.
-- Required next step: one bounded 2D numerical comparison of full-field and singularity-state efficient Fisher information under matched target, nuisance, and detector models.
-- Mathematical framework, simulation, and experimental validation are pending.
-- No numerical simulation was performed for Theory Gate 1, and no theory paper has been written.
+- Required next step: Simulation Gate 1B must determine whether the approximately 14% information retention is primarily an extractor limitation or an inherent limitation of the two-coordinate zero state.
+- Further mathematical framework, simulation, and experimental validation remain pending.
+- Theory Gate 1 itself contained no numerical simulation; Simulation Gate 1 now supplies bounded 2D numerical evidence. No theory paper has been written.
 - Strongest Simulation Gate 1 positive result: the two-coordinate state was exactly common-gain invariant in the noiseless model, compressed 1,922 real samples to 2 post-extraction values, and required about one thirteenth of the estimator runtime in the authoritative recorded invocation.
 - Strongest Simulation Gate 1 negative result: the tested extractor retained about 14% of full-field efficient Fisher information on average, with materially higher RMSE, and was blind to an exact zero-preserving deformation.
 - Practical advantage remains plausible only if improved extraction, direct feature acquisition, or a nonredundant multi-feature state can meet a predefined retention and cost target.
@@ -60,8 +61,8 @@ Review the bounded 2D Simulation Gate 1 `HOLD` result before authorizing any ref
 
 ## Ordered next actions
 
-1. Carson reviews the Simulation Gate 1 implementation, evidence, and `HOLD` verdict.
-2. If authorized, predefine an information-retention threshold and test a more efficient zero extractor with realistic nonmultiplicative nuisances.
-3. Determine whether direct feature acquisition can reduce physical measurement burden rather than only stored-state dimension.
+1. Await Carson's authorization to begin Simulation Gate 1B: Singularity-State Information Ceiling.
+2. If authorized, separate extractor inefficiency from the information ceiling of the two-coordinate zero state under matched samples and nuisance assumptions.
+3. Predefine the information-retention threshold and practical cost target before running Gate 1B.
 4. Do not address a 3D vortex-line or landmark state unless a bounded 2D representation demonstrates a defensible practical advantage.
-5. Commit or push only with explicit authorization. No commit or push has been performed for Simulation Gate 1.
+5. Commit or push only with explicit authorization.
