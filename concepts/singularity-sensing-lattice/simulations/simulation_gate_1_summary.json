@@ -1,0 +1,72 @@
+{
+  "seed": 20261015,
+  "grid_size": [
+    31,
+    31
+  ],
+  "complex_samples": 961,
+  "full_field_real_values": 1922,
+  "singularity_state_real_values": 2,
+  "compression_ratio": 961,
+  "trials_per_condition": 80,
+  "conditions": 36,
+  "total_trials": 2880,
+  "snr_definition": "10 log10(mean(|g Psi|^2) / E|n|^2)",
+  "noise_definition": "circular complex Gaussian; each real component has variance sigma_n^2/2",
+  "by_snr": {
+    "40": {
+      "full_rmse_combined_mean": 0.0003771530646960754,
+      "singularity_rmse_combined_mean": 0.001345001793862715,
+      "information_trace_ratio_mean": 0.15652143727576012,
+      "full_failure_rate_mean": 0.0,
+      "singularity_failure_rate_mean": 0.0
+    },
+    "30": {
+      "full_rmse_combined_mean": 0.0011790293571400838,
+      "singularity_rmse_combined_mean": 0.003198359467138412,
+      "information_trace_ratio_mean": 0.15524162442172154,
+      "full_failure_rate_mean": 0.0,
+      "singularity_failure_rate_mean": 0.0
+    },
+    "20": {
+      "full_rmse_combined_mean": 0.003641046245042413,
+      "singularity_rmse_combined_mean": 0.009923839779904164,
+      "information_trace_ratio_mean": 0.1501111866180756,
+      "full_failure_rate_mean": 0.0,
+      "singularity_failure_rate_mean": 0.0
+    },
+    "10": {
+      "full_rmse_combined_mean": 0.012192542295866868,
+      "singularity_rmse_combined_mean": 0.038552974225694314,
+      "information_trace_ratio_mean": 0.099138155766716,
+      "full_failure_rate_mean": 0.0,
+      "singularity_failure_rate_mean": 0.001388888888888884
+    }
+  },
+  "overall": {
+    "full_rmse_combined_mean": 0.0043474427406863594,
+    "singularity_rmse_combined_mean": 0.013255043816649902,
+    "information_trace_ratio_mean": 0.14025310102056832,
+    "information_trace_ratio_min": 0.08078380592175452,
+    "information_trace_ratio_max": 0.18915647384730294,
+    "full_failure_rate_mean": 0.0,
+    "singularity_failure_rate_mean": 0.000347222222222221,
+    "full_runtime_ms_mean": 3.192600347190617,
+    "singularity_runtime_ms_mean": 0.23589433963530204
+  },
+  "negative_control": {
+    "deformation_minus": -0.25,
+    "deformation_plus": 0.25,
+    "full_field_efficient_fisher": 2993843.195791089,
+    "singularity_coordinate_fisher": 0.0,
+    "noiseless_zero_shift": 0.0009578384125156366,
+    "localizations_valid": true
+  },
+  "self_checks": {
+    "zero_location": true,
+    "gain_invariance": true,
+    "fisher_symmetry": true,
+    "fisher_psd": true,
+    "estimator_sanity": true
+  }
+}

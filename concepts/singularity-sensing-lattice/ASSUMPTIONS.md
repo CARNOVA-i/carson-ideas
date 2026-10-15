@@ -2,6 +2,17 @@
 
 Status labels describe the literature evidence reviewed on 2026-10-14. They do not establish feasibility for the proposed architecture.
 
+## Evidence from bounded Simulation Gate 1
+
+- **Supported in this bounded simulation:** The exact isolated-zero coordinate is invariant to nonzero global complex gain, and the implemented noiseless extraction preserved that invariance to numerical tolerance.
+- **Supported in this bounded simulation:** One extracted zero encoded both components of 2D translation over the admitted region with a very low localization-failure rate.
+- **Unsupported as a near-sufficiency claim:** The tested local affine singularity extractor retained about 14% of matched full-field efficient Fisher information on average and had materially higher translation RMSE.
+- **Supported only as post-extraction compression:** Two real singularity coordinates replaced 1,922 real field values after both methods had accessed the same 961 complex samples. This did not reduce detector acquisition burden.
+- **Contradicted for the negative-control mode:** A zero-preserving radial deformation was observable in the full field but not identifiable from the exact zero coordinate.
+- **Still unverified:** Whether a more efficient extractor, direct feature-acquisition channel, multiple nonredundant singularities, or more realistic nuisance model provides a defensible practical advantage.
+
+These findings apply only to the documented 2D translated Gaussian-envelope vortex model and do not establish 3D, cross-domain, or experimental viability.
+
 ## Established in related systems
 
 - **Phase singularities can be deliberately generated and spatially arranged.** Optical metasurface experiments have produced point arrays and sheet structures.
