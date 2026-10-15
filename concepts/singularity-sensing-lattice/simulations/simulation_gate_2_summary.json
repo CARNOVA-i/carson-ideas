@@ -1,0 +1,174 @@
+{
+  "seed": 20261015,
+  "trials_per_condition": 120,
+  "conditions": 20,
+  "total_paired_trials": 2400,
+  "model": "translated Gaussian-envelope vortex with zero-preserving anisotropy alpha and radial phase curvature beta",
+  "parameters": [
+    "dx",
+    "dy",
+    "alpha",
+    "beta"
+  ],
+  "decision_criteria": {
+    "pass_joint": 0.9,
+    "pass_worst_parameter": 0.7,
+    "max_state_dimension": 20,
+    "bands": {
+      "excellent": ">=0.95",
+      "strong": "0.90-0.95",
+      "partial": "0.75-0.90",
+      "weak": "0.50-0.75",
+      "insufficient": "<0.50"
+    }
+  },
+  "overall": {
+    "S2_position": {
+      "state_dimension": 2,
+      "compression_ratio": 961.0,
+      "joint_trace_retention": 0.05859835497104169,
+      "joint_determinant_retention": 1.067562608216488e-08,
+      "per_parameter_retention": {
+        "dx": 0.11835512510725923,
+        "dy": 0.11485741422126812,
+        "alpha": 1.9100855710368006e-07,
+        "beta": 2.3547834001375055e-07
+      },
+      "worst_parameter_retention": 1.9100855710368006e-07,
+      "rmse": {
+        "dx": 0.009206113458498647,
+        "dy": 0.009799460813598046,
+        "alpha": null,
+        "beta": null
+      },
+      "failure_rate": 0.0,
+      "runtime_ms": {
+        "extraction": 0.3456804583083794,
+        "estimation": 0.0004262916672814754,
+        "total": 0.34610674997566093
+      }
+    },
+    "S6_jacobian": {
+      "state_dimension": 6,
+      "compression_ratio": 320.3333333333333,
+      "joint_trace_retention": 0.060665396971842256,
+      "joint_determinant_retention": 0.0001132954855917648,
+      "per_parameter_retention": {
+        "dx": 0.12313536348335877,
+        "dy": 0.11823707979308659,
+        "alpha": 5.55762539666711e-06,
+        "beta": 3.2356388251267825e-07
+      },
+      "worst_parameter_retention": 3.2356388251267825e-07,
+      "rmse": {
+        "dx": 0.029027157493830513,
+        "dy": 0.018431905745950897,
+        "alpha": 1.914906809240349,
+        "beta": 1.5975456999221993
+      },
+      "failure_rate": 0.0,
+      "runtime_ms": {
+        "extraction": 0.3456804583083794,
+        "estimation": 0.00040650000452539337,
+        "total": 0.3460869583129049
+      }
+    },
+    "S14_descriptor": {
+      "state_dimension": 14,
+      "compression_ratio": 137.28571428571428,
+      "joint_trace_retention": 0.08844617753875803,
+      "joint_determinant_retention": 0.005060451159060328,
+      "per_parameter_retention": {
+        "dx": 0.17787912792365276,
+        "dy": 0.17367965541716168,
+        "alpha": 0.00023341486127354894,
+        "beta": 0.00010175257212218952
+      },
+      "worst_parameter_retention": 0.00010175257212218952,
+      "rmse": {
+        "dx": 0.007591335667360871,
+        "dy": 0.007676015746542593,
+        "alpha": 0.26656132036047053,
+        "beta": 0.21145958656211997
+      },
+      "failure_rate": 0.0,
+      "runtime_ms": {
+        "extraction": 0.3456804583083794,
+        "estimation": 0.0004317083372977019,
+        "total": 0.3461121666456772
+      }
+    },
+    "P50_patch": {
+      "state_dimension": 50,
+      "compression_ratio": 38.44,
+      "joint_trace_retention": 0.07695621836533897,
+      "joint_determinant_retention": 0.0019136762099879474,
+      "per_parameter_retention": {
+        "dx": 0.17413679933744866,
+        "dy": 0.13385065083315545,
+        "alpha": 3.0646312629201956e-05,
+        "beta": 3.178452132062441e-05
+      },
+      "worst_parameter_retention": 3.0646312629201956e-05,
+      "rmse": {
+        "dx": 0.010549694968193945,
+        "dy": 0.015209747916110256,
+        "alpha": 0.5886902044162486,
+        "beta": 0.36325528996039874
+      },
+      "failure_rate": 0.0,
+      "runtime_ms": {
+        "extraction": 0.3456804583083794,
+        "estimation": 0.00047508332954748766,
+        "total": 0.3461555416379269
+      }
+    },
+    "full_field": {
+      "state_dimension": 1922,
+      "compression_ratio": 1.0,
+      "joint_trace_retention": 1.0,
+      "joint_determinant_retention": 1.0,
+      "per_parameter_retention": {
+        "dx": 1.0,
+        "dy": 1.0,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "worst_parameter_retention": 1.0,
+      "rmse": {
+        "dx": 0.002868312547145524,
+        "dy": 0.0030048310859354666,
+        "alpha": 0.0034485223418184866,
+        "beta": 0.0020883893563201326
+      },
+      "failure_rate": 0.0,
+      "runtime_ms": {
+        "extraction": 0.0,
+        "estimation": 0.012207708332425682,
+        "total": 0.012207708332425682
+      }
+    }
+  },
+  "smallest_passing_state": null,
+  "verdict": "FAIL",
+  "locality_classification": "C",
+  "negative_controls": {
+    "A": "S2 position is rank deficient for alpha and beta by construction.",
+    "B": "all compact features were tested under non-unit complex gain; claimed descriptors normalize gain."
+  },
+  "self_checks": {
+    "fisher_symmetry": true,
+    "fisher_psd": true,
+    "full_parameter_rank": true,
+    "finite_full_fisher": true,
+    "zero_controlled": true,
+    "gain_invariance": {
+      "S2_position": true,
+      "S6_jacobian": true,
+      "S14_descriptor": true,
+      "P50_patch": true
+    },
+    "deformation_derivatives_nonzero": true
+  },
+  "deterministic_digest_excluding_timing": "6d0da50158f5e59066372d845c0cf76caf47b9324dcee7d87b998104c87f60b0"
+}

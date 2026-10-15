@@ -16,8 +16,12 @@ Current phase:
 - Ideal two-coordinate translation state ceiling: 100%; profile-likelihood coordinate extraction reached the ceiling within Monte Carlo error
 - Gate 1's approximately 14% retention was primarily an affine-extractor limitation, not an inherent coordinate-state limit for this translation-only model
 - Efficient extraction still used the complete sampled field and did not demonstrate acquisition or computation reduction
+- Simulation Gate 2 completed: **FAIL** for the tested multi-mode compact singularity-centered states
+- The 14-value gain-invariant descriptor retained 8.84% joint information and only about 0.01% for its weakest zero-preserving mode
+- The normalized 5x5 complex patch retained 7.70% joint information, so global field context remained necessary for the admitted deformation modes
+- No tested state met the 90% joint target or the 70% per-parameter floor
 - Full application-specific mathematical framework pending
 - Further simulation pending
 - Experimental validation pending
 
-No 3D simulation or experiment has been performed. No theory paper has been written. Simulation Gate 1 remains historically `HOLD`; Gate 1B passes only its narrower information-ceiling question. The novelty verdict is provisional and evidence-bounded, not a patentability opinion or a claim of novelty.
+No 3D simulation or experiment has been performed. No theory paper has been written. Simulation Gate 1 remains historically `HOLD`; Gate 1B passes only its narrower information-ceiling question; Gate 2 fails for the tested broader local-state architecture. The novelty verdict is provisional and evidence-bounded, not a patentability opinion or a claim of novelty.

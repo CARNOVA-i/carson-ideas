@@ -24,6 +24,17 @@ These findings apply only to the documented 2D translated Gaussian-envelope vort
 
 These Gate 1B findings classify the representation as sufficient for the exact bounded translation family, not for general inverse reconstruction.
 
+## Evidence from bounded Simulation Gate 2
+
+- **Contradicted for the tested compact states:** No state preserved most information for the four-parameter family containing translation, anisotropy, and radial phase curvature. The best state with at most 20 values retained 8.84% jointly.
+- **Contradicted for zero-preserving sensitivity:** The weakest deformation-mode retention of the 14-value descriptor was about 0.01%; position alone was effectively blind to both zero-preserving modes.
+- **Unsupported for strict locality:** A normalized 5x5 complex patch retained 7.70% joint information. Global field context remained necessary for the admitted deformation modes.
+- **Supported in the noiseless implementation:** All compact feature constructions were invariant to the tested nonzero global complex gain.
+- **Unsupported as a computational advantage:** The implemented compact pipeline had no end-to-end timing advantage over the local full-field GLS benchmark.
+- **Still unverified:** Whether deliberately nonlocal summaries, multiple separated singularities, direct feature acquisition, or a different field design could yield a compact multi-mode architecture.
+
+These results reject the tested local singularity-centered states, not every possible compact statistic or engineered multi-singularity architecture.
+
 ## Established in related systems
 
 - **Phase singularities can be deliberately generated and spatially arranged.** Optical metasurface experiments have produced point arrays and sheet structures.

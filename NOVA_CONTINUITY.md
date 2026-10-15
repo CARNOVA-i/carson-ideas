@@ -13,9 +13,7 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 ## Current objective
 
-The next planned research phase is Simulation Gate 2: Multi-Mode Compact State. It has not begun and requires separate authorization.
-
-Gate 2 will test a broader 2D target family containing both zero-moving and zero-preserving modes and determine the smallest compact singularity-centered state that preserves most of the task-relevant information.
+Simulation Gate 2: Multi-Mode Compact State has been performed locally and is awaiting Carson's review. Verdict: **FAIL** for the tested local compact-state architecture.
 
 ## Current state
 
@@ -27,6 +25,7 @@ Gate 2 will test a broader 2D target family containing both zero-moving and zero
 - `concepts/singularity-sensing-lattice/theory-gate-1.md` records the information, identifiability, Fisher-information, noise, and conditioning analysis.
 - `simulation-gate-1.md`, `simulations/simulation_gate_1.py`, generated result data, and generated figures record a matched-data 2D translation comparison.
 - `simulation-gate-1b.md`, `simulations/simulation_gate_1b.py`, generated result data, and generated figures decompose the translation-information ceiling from extractor loss.
+- `simulation-gate-2.md`, `simulations/simulation_gate_2.py`, generated result data, and generated figures test a four-parameter multi-mode family and a hierarchy of local compact states.
 
 ## Authorities / constraints / invariants
 
@@ -48,6 +47,8 @@ Gate 2 will test a broader 2D target family containing both zero-moving and zero
 - Simulation Gate 1B used the exact Gate 1 model, 5,760 main paired trials, and a bounded 21x21/31x31/41x41 grid and 3x3/5x5/7x7 window study.
 - Simulation Gate 1B verdict: **PASS** for the narrow translation information-ceiling question.
 - Simulation Gate 1B publication, commit identity, clean state, and remote synchronization were verified at `4502de440d75753e21e9a0b572742284c817b931`.
+- Simulation Gate 2 used baseline `f6106b5e75396646f88eaa9ebd10a31943fcaddc`, parameters `[dx,dy,alpha,beta]`, 2,400 paired trials, and state dimensions 2, 6, 14, 50, and 1,922.
+- Gate 2 verdict: **FAIL**. The best tested state with at most 20 values was S14 at 8.84% joint retention; its weakest parameter retained about 0.01%.
 
 ## Open issues / risks
 
@@ -58,7 +59,8 @@ Gate 2 will test a broader 2D target family containing both zero-moving and zero
 - Theory Gate 1 verdict: **CONDITIONAL PASS**.
 - Strongest positive result: local identifiability is achievable for restricted models when the defined feature coordinates yield a full-column-rank, noise-weighted sensitivity matrix.
 - Strongest failure risk: a state extracted from the same complete field cannot exceed full-field information, while near-singular spatial Jacobians amplify localization noise and generic 3D scalar-field zeros form lines rather than isolated points.
-- Required next step: Simulation Gate 2 must test a broader 2D target family containing both zero-moving and zero-preserving modes and determine the smallest compact singularity-centered state that preserves most of the task-relevant information.
+- Gate 2 locality result: the normalized 5x5 patch retained 7.70% joint information, classifying global field context as necessary for the admitted deformation modes.
+- Gate 2 timing result: the implemented compact pipeline showed no total-pipeline computational advantage over the local full-field GLS benchmark.
 - Further mathematical framework, simulation, and experimental validation remain pending.
 - Theory Gate 1 itself contained no numerical simulation; Simulation Gate 1 now supplies bounded 2D numerical evidence. No theory paper has been written.
 - Strongest Simulation Gate 1 positive result: the two-coordinate state was exactly common-gain invariant in the noiseless model, compressed 1,922 real samples to 2 post-extraction values, and required about one thirteenth of the estimator runtime in the authoritative recorded invocation.
@@ -70,13 +72,13 @@ Gate 2 will test a broader 2D target family containing both zero-moving and zero
 - Strongest positive result: a two-coordinate output can preserve essentially all matched translation information while retaining ideal global-gain invariance.
 - Strongest negative result: efficient profile extraction uses the complete field likelihood, provides no demonstrated acquisition or compute reduction, and the coordinate state remains blind to zero-preserving deformation.
 - The principal Gate 1 bottleneck is extraction, not representation, for the bounded translation model.
-- Simulation Gate 2 has not begun.
+- Strongest Gate 2 positive result: a deterministic 14-value gain-invariant descriptor was measurable without extraction failures.
+- Strongest Gate 2 negative result: that descriptor retained only 8.84% joint information and effectively lost the zero-preserving modes.
+- No 3D simulation or experiment was performed, no paper was written, and no Gate 2 commit or push has occurred.
 
 ## Ordered next actions
 
-1. Await Carson's authorization to begin Simulation Gate 2: Multi-Mode Compact State.
-2. If authorized, define the broader 2D target family containing both zero-moving and zero-preserving modes.
-3. Determine the smallest compact singularity-centered state that preserves most of the task-relevant information.
-4. Separately test whether cheaper local likelihood or direct feature acquisition can approach the translation ceiling without full-field computation.
-5. Do not begin 3D work or paper drafting without separate authorization.
-6. Commit or push only with explicit authorization.
+1. Carson reviews the Gate 2 evidence and `FAIL` verdict.
+2. Do not proceed to 3D, experiment, paper drafting, or hardware.
+3. If separately authorized, consider a bounded reformulation using deliberately nonlocal summaries or multiple spatially separated singularities.
+4. Commit or push only with explicit authorization. No commit or push has occurred for Gate 2.
