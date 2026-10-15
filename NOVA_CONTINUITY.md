@@ -6,12 +6,12 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 ## Repository state
 
-- Branch `main` tracks `origin/main` at the published initial commit `d5e23a4b789e6117fe7fa3f9eff0b4cb7a6cb7cd`.
-- The novelty-review and Theory Gate 1 changes are local and uncommitted. No push has been performed for either milestone.
+- Branch `main` tracks `origin/main` at commit `1969540f6ee71f9f93a6a8697d4782e42b220bbc`, `Complete novelty review and Theory Gate 1`.
+- The novelty review and Theory Gate 1 are published and verified. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
 
 ## Current objective
 
-Review Theory Gate 1 before authorizing a bounded numerical information-retention test or any paper drafting.
+The next authorized research phase has not begun. The next planned phase is bounded 2D numerical Simulation Gate 1.
 
 ## Current state
 
@@ -34,7 +34,7 @@ Review Theory Gate 1 before authorizing a bounded numerical information-retentio
 - Exact expected file inventory verified.
 - Text files verified as UTF-8 without BOM, with LF endings and final newlines.
 - Initial commit and publication were previously verified.
-- Novelty-review and Theory Gate 1 file scope, content, and Git status require final validation before handoff.
+- Novelty review and Theory Gate 1 publication, commit identity, clean state, and remote synchronization were verified at `1969540f6ee71f9f93a6a8697d4782e42b220bbc`.
 
 ## Open issues / risks
 
@@ -51,8 +51,8 @@ Review Theory Gate 1 before authorizing a bounded numerical information-retentio
 
 ## Ordered next actions
 
-1. Carson reviews the novelty findings and Theory Gate 1.
-2. If approved, define the bounded 2D optical numerical gate, including target, nuisance, detector, and feature-association models.
+1. Await Carson's authorization to begin bounded 2D numerical Simulation Gate 1.
+2. Once authorized, define the bounded 2D optical numerical gate, including target, nuisance, detector, and feature-association models.
 3. Compare efficient Fisher information and estimator performance against the same full-field samples.
 4. Address a 3D vortex-line or landmark state only if the 2D representation retains useful information or provides a practical advantage.
 5. Commit or push only with explicit authorization.
