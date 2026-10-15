@@ -13,6 +13,17 @@ Status labels describe the literature evidence reviewed on 2026-10-14. They do n
 
 These findings apply only to the documented 2D translated Gaussian-envelope vortex model and do not establish 3D, cross-domain, or experimental viability.
 
+## Evidence from bounded Simulation Gate 1B
+
+- **Supported for the translation-only model:** The ideal two-coordinate zero state can retain 100% of matched efficient translation information because the zero coordinate equals the target parameter.
+- **Extractor limitation identified:** A profile-likelihood coordinate extractor reached the full-field ceiling within Monte Carlo error, while the published Gate 1 affine extractor retained approximately 14%.
+- **Sampling was not the primary ceiling:** Profile retention remained approximately 95% to 100% across the bounded 21x21, 31x31, and 41x41 grid test. Local affine retention varied strongly with grid and window geometry.
+- **Still only post-extraction compression:** Efficient profile localization used the complete complex-field sample set and essentially the same computation as the full-field estimator.
+- **Contradicted as a general inverse-reconstruction claim:** The zero coordinate remains completely blind to the zero-preserving negative-control deformation. Adequacy for translation does not establish adequacy for broader perturbation fields.
+- **Still unverified:** Whether a cheaper local likelihood, direct feature-acquisition channel, or richer compact state preserves useful information under realistic model mismatch and multiple target modes.
+
+These Gate 1B findings classify the representation as sufficient for the exact bounded translation family, not for general inverse reconstruction.
+
 ## Established in related systems
 
 - **Phase singularities can be deliberately generated and spatially arranged.** Optical metasurface experiments have produced point arrays and sheet structures.
@@ -35,7 +46,7 @@ These established statements are limited to the cited systems and do not establi
 - **A perturbation field is identifiable from the singularity state.** Distinct perturbations may produce indistinguishable zero sets.
 - **Birth, annihilation, and reconnection events can be associated reliably rather than causing catastrophic tracking ambiguity.**
 - **Useful signal can be separated from source, environmental, detector, and calibration noise using collective correlations.**
-- **The singularity representation preserves enough task-relevant information for inverse reconstruction.**
+- **The singularity representation preserves enough task-relevant information for inverse reconstruction.** Supported only for the exact bounded translation family; contradicted as a general claim by the zero-preserving deformation control.
 - **Collective singularity behavior provides a measurable advantage over optimal estimators using the same full-field data.** This is the decisive unverified assumption.
 - **The noise-weighted global sensitivity matrix has full column rank and acceptable conditioning over the admitted operating region.** More singularities do not guarantee more observable parameter modes.
 - **The chosen 3D feature coordinates are intrinsic and reproducible.** Generic scalar-field zeros in 3D are curves, so point labels require cross-sections, landmarks, additional constraints, or a defined gauge.

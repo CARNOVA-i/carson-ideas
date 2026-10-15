@@ -8,11 +8,12 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 - Branch `main` tracks `origin/main` at commit `ab864e5eddde90675588ea95544b19afbb3977e4`, `Complete Simulation Gate 1`.
 - The novelty review and Theory Gate 1 are published and verified.
-- Simulation Gate 1 is published and verified with verdict **HOLD**. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
+- Simulation Gate 1 is published and verified with verdict **HOLD** at the synchronized baseline `54f371a357039ad492dfda9b691b62e481ee5644`.
+- Simulation Gate 1B changes are local and uncommitted; the index remains clean and no push has been performed for this gate.
 
 ## Current objective
 
-The next planned research phase is Simulation Gate 1B: Singularity-State Information Ceiling. It has not begun and requires separate authorization.
+Review Simulation Gate 1B before authorizing any broader multi-parameter simulation, 3D work, or paper drafting.
 
 ## Current state
 
@@ -23,6 +24,7 @@ The next planned research phase is Simulation Gate 1B: Singularity-State Informa
 - `REFERENCES.md`, `STATUS.md`, and `ASSUMPTIONS.md` reflect the review; `notes/terminology-map.md` maps adjacent terminology.
 - `concepts/singularity-sensing-lattice/theory-gate-1.md` records the information, identifiability, Fisher-information, noise, and conditioning analysis.
 - `simulation-gate-1.md`, `simulations/simulation_gate_1.py`, generated result data, and generated figures record a matched-data 2D translation comparison.
+- `simulation-gate-1b.md`, `simulations/simulation_gate_1b.py`, generated result data, and generated figures decompose the translation-information ceiling from extractor loss.
 
 ## Authorities / constraints / invariants
 
@@ -41,6 +43,8 @@ The next planned research phase is Simulation Gate 1B: Singularity-State Informa
 - Internal checks passed for zero location, gain invariance, Fisher symmetry, Fisher positive semidefiniteness, and estimator sanity.
 - Simulation Gate 1 verdict: **HOLD**.
 - Simulation Gate 1 publication, commit identity, clean state, and remote synchronization were verified at `ab864e5eddde90675588ea95544b19afbb3977e4`.
+- Simulation Gate 1B used the exact Gate 1 model, 5,760 main paired trials, and a bounded 21x21/31x31/41x41 grid and 3x3/5x5/7x7 window study.
+- Simulation Gate 1B verdict: **PASS** for the narrow translation information-ceiling question.
 
 ## Open issues / risks
 
@@ -51,18 +55,24 @@ The next planned research phase is Simulation Gate 1B: Singularity-State Informa
 - Theory Gate 1 verdict: **CONDITIONAL PASS**.
 - Strongest positive result: local identifiability is achievable for restricted models when the defined feature coordinates yield a full-column-rank, noise-weighted sensitivity matrix.
 - Strongest failure risk: a state extracted from the same complete field cannot exceed full-field information, while near-singular spatial Jacobians amplify localization noise and generic 3D scalar-field zeros form lines rather than isolated points.
-- Required next step: Simulation Gate 1B must determine whether the approximately 14% information retention is primarily an extractor limitation or an inherent limitation of the two-coordinate zero state.
+- Required next step: Carson reviews whether a broader multi-parameter 2D task should test a richer compact feature state and whether cheaper extraction can approach the translation ceiling.
 - Further mathematical framework, simulation, and experimental validation remain pending.
 - Theory Gate 1 itself contained no numerical simulation; Simulation Gate 1 now supplies bounded 2D numerical evidence. No theory paper has been written.
 - Strongest Simulation Gate 1 positive result: the two-coordinate state was exactly common-gain invariant in the noiseless model, compressed 1,922 real samples to 2 post-extraction values, and required about one thirteenth of the estimator runtime in the authoritative recorded invocation.
 - Strongest Simulation Gate 1 negative result: the tested extractor retained about 14% of full-field efficient Fisher information on average, with materially higher RMSE, and was blind to an exact zero-preserving deformation.
 - Practical advantage remains plausible only if improved extraction, direct feature acquisition, or a nonredundant multi-feature state can meet a predefined retention and cost target.
 - No 3D simulation or experiment was performed, and no paper was written.
+- Ideal zero-state translation retention is 100%; profile coordinate localization reached that ceiling within Monte Carlo error.
+- The published approximately 14% Gate 1 result is primarily an affine-extractor limitation for this exact task; representation loss is 0% for translation and approximately 86% of information was lost by the Gate 1 extractor.
+- Strongest positive result: a two-coordinate output can preserve essentially all matched translation information while retaining ideal global-gain invariance.
+- Strongest negative result: efficient profile extraction uses the complete field likelihood, provides no demonstrated acquisition or compute reduction, and the coordinate state remains blind to zero-preserving deformation.
+- The principal Gate 1 bottleneck is extraction, not representation, for the bounded translation model.
+- Simulation Gate 1B changes are local and uncommitted. No commit or push has been performed for this gate.
 
 ## Ordered next actions
 
-1. Await Carson's authorization to begin Simulation Gate 1B: Singularity-State Information Ceiling.
-2. If authorized, separate extractor inefficiency from the information ceiling of the two-coordinate zero state under matched samples and nuisance assumptions.
-3. Predefine the information-retention threshold and practical cost target before running Gate 1B.
-4. Do not address a 3D vortex-line or landmark state unless a bounded 2D representation demonstrates a defensible practical advantage.
-5. Commit or push only with explicit authorization.
+1. Carson reviews the Simulation Gate 1B evidence and narrow `PASS` verdict.
+2. If authorized, define a broader multi-parameter 2D task containing both zero-moving and zero-preserving modes before testing a richer compact feature state.
+3. Separately test whether cheaper local likelihood or direct feature acquisition can approach the translation ceiling without full-field computation.
+4. Do not begin 3D work or paper drafting without separate authorization.
+5. Commit or push only with explicit authorization. No commit or push has been performed for Simulation Gate 1B.

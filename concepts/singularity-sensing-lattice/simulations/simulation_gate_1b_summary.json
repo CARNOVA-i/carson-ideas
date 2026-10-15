@@ -1,0 +1,231 @@
+{
+  "seed": 20261015,
+  "decision_bands": {
+    "strong": ">=0.70",
+    "task_dependent": "0.40-0.70",
+    "weak": "0.20-0.40",
+    "too_lossy": "<0.20"
+  },
+  "model": "Gate 1 translated 2D Gaussian-envelope vortex",
+  "main_trials_per_condition": 160,
+  "main_conditions": 36,
+  "main_total_trials": 5760,
+  "ideal_zero_state_retention": 1.0,
+  "ideal_basis": "For this translation-only family, zero coordinate equals theta; a profile-likelihood coordinate estimator can attain the full-field efficient CRB asymptotically.",
+  "mean_retention": {
+    "profile_zero": 1.0104370682125448,
+    "affine_3": 0.048105699341537356,
+    "affine_5": 0.12465859418239122,
+    "affine_7": 0.20013163913982293
+  },
+  "representation_loss": 0.0,
+  "gate1_affine_extraction_loss": 0.8753414058176088,
+  "improved_profile_extraction_loss": 0.0,
+  "by_snr": {
+    "40": {
+      "profile_zero": {
+        "retention_trace": 1.0313759528387334,
+        "retention_eigen_min": 1.0104476593579346,
+        "retention_eigen_max": 1.0522787625824706,
+        "rmse_combined": 0.0003710712989733287,
+        "failure_rate": 0.0
+      },
+      "affine_3": {
+        "retention_trace": 0.05462851043318982,
+        "retention_eigen_min": 0.05051074409479436,
+        "retention_eigen_max": 0.05874126269460166,
+        "rmse_combined": 0.001616654944733668,
+        "failure_rate": 0.0
+      },
+      "affine_5": {
+        "retention_trace": 0.10184495024677476,
+        "retention_eigen_min": 0.04989293073432098,
+        "retention_eigen_max": 0.15373370938846406,
+        "rmse_combined": 0.001372893557551502,
+        "failure_rate": 0.0
+      },
+      "affine_7": {
+        "retention_trace": 0.1443649571178405,
+        "retention_eigen_min": 0.0189130517516826,
+        "retention_eigen_max": 0.26966410357065784,
+        "rmse_combined": 0.0020045167784891677,
+        "failure_rate": 0.0
+      }
+    },
+    "30": {
+      "profile_zero": {
+        "retention_trace": 0.9849191583631735,
+        "retention_eigen_min": 0.965853234886815,
+        "retention_eigen_max": 1.003961865852947,
+        "rmse_combined": 0.0012007629868864874,
+        "failure_rate": 0.0
+      },
+      "affine_3": {
+        "retention_trace": 0.055197971298105705,
+        "retention_eigen_min": 0.05282777996018509,
+        "retention_eigen_max": 0.05756527652718539,
+        "rmse_combined": 0.005075995847049479,
+        "failure_rate": 0.0
+      },
+      "affine_5": {
+        "retention_trace": 0.13863092944411448,
+        "retention_eigen_min": 0.11975917607436483,
+        "retention_eigen_max": 0.15747970326222493,
+        "rmse_combined": 0.003230238221177597,
+        "failure_rate": 0.0
+      },
+      "affine_7": {
+        "retention_trace": 0.19533038905548752,
+        "retention_eigen_min": 0.11813625243414562,
+        "retention_eigen_max": 0.27243052875910934,
+        "rmse_combined": 0.002935192598584907,
+        "failure_rate": 0.0
+      }
+    },
+    "20": {
+      "profile_zero": {
+        "retention_trace": 1.0410286896138023,
+        "retention_eigen_min": 1.024743428744617,
+        "retention_eigen_max": 1.0572941204234392,
+        "rmse_combined": 0.003693150851043621,
+        "failure_rate": 0.0
+      },
+      "affine_3": {
+        "retention_trace": 0.05383817783022786,
+        "retention_eigen_min": 0.053074290867273416,
+        "retention_eigen_max": 0.054601134631603356,
+        "rmse_combined": 0.01623952866273084,
+        "failure_rate": 0.0
+      },
+      "affine_5": {
+        "retention_trace": 0.15648770229285972,
+        "retention_eigen_min": 0.15356440817650754,
+        "retention_eigen_max": 0.15940743680418806,
+        "rmse_combined": 0.009526024850820795,
+        "failure_rate": 0.0
+      },
+      "affine_7": {
+        "retention_trace": 0.25570596556685965,
+        "retention_eigen_min": 0.2286309831597595,
+        "retention_eigen_max": 0.2827479796034982,
+        "rmse_combined": 0.007493320538776252,
+        "failure_rate": 0.0
+      }
+    },
+    "10": {
+      "profile_zero": {
+        "retention_trace": 0.98442447203447,
+        "retention_eigen_min": 0.9304863164686632,
+        "retention_eigen_max": 1.0382969487729385,
+        "rmse_combined": 0.012026703218185705,
+        "failure_rate": 0.0
+      },
+      "affine_3": {
+        "retention_trace": 0.028758137804626036,
+        "retention_eigen_min": 0.02727740940030732,
+        "retention_eigen_max": 0.030237063171666547,
+        "rmse_combined": 0.07035260666313471,
+        "failure_rate": 0.08055555555555556
+      },
+      "affine_5": {
+        "retention_trace": 0.10167079474581597,
+        "retention_eigen_min": 0.09977264857119149,
+        "retention_eigen_max": 0.10356662960642612,
+        "rmse_combined": 0.03737262599580369,
+        "failure_rate": 0.001388888888888884
+      },
+      "affine_7": {
+        "retention_trace": 0.20512524481910402,
+        "retention_eigen_min": 0.18921593031087175,
+        "retention_eigen_max": 0.22101518704606907,
+        "rmse_combined": 0.02638704918464645,
+        "failure_rate": 0.0
+      }
+    }
+  },
+  "runtime_ms_mean": {
+    "profile_zero": 2.581902187446556,
+    "affine_3": 0.19877447914243224,
+    "affine_5": 0.17028437515465258,
+    "affine_7": 0.16451539973382345
+  },
+  "grid_window_sensitivity_at_30db": {
+    "21": {
+      "profile_zero": {
+        "retention_trace": 0.9811688894216598,
+        "rmse_combined": 0.0017793681355066679,
+        "failure_rate": 0.0
+      },
+      "affine_3": {
+        "retention_trace": 0.08261304242673373,
+        "rmse_combined": 0.006184941290127446,
+        "failure_rate": 0.0
+      },
+      "affine_5": {
+        "retention_trace": 0.05876026666482786,
+        "rmse_combined": 0.008030687788123913,
+        "failure_rate": 0.0
+      },
+      "affine_7": {
+        "retention_trace": 0.01771882633617338,
+        "rmse_combined": 0.015317847220905983,
+        "failure_rate": 0.0
+      }
+    },
+    "31": {
+      "profile_zero": {
+        "retention_trace": 0.998519811061016,
+        "rmse_combined": 0.0011923987981717992,
+        "failure_rate": 0.0
+      },
+      "affine_3": {
+        "retention_trace": 0.05413952508435957,
+        "rmse_combined": 0.005146334801189658,
+        "failure_rate": 0.0
+      },
+      "affine_5": {
+        "retention_trace": 0.1369698339426162,
+        "rmse_combined": 0.003261037511832382,
+        "failure_rate": 0.0
+      },
+      "affine_7": {
+        "retention_trace": 0.20622333404802884,
+        "rmse_combined": 0.0028958822348085873,
+        "failure_rate": 0.0
+      }
+    },
+    "41": {
+      "profile_zero": {
+        "retention_trace": 0.9494520172943693,
+        "rmse_combined": 0.0009287151866106297,
+        "failure_rate": 0.0
+      },
+      "affine_3": {
+        "retention_trace": 0.030054029586042145,
+        "rmse_combined": 0.0052228444213724984,
+        "failure_rate": 0.0
+      },
+      "affine_5": {
+        "retention_trace": 0.0803210215996509,
+        "rmse_combined": 0.0031812978308510148,
+        "failure_rate": 0.0
+      },
+      "affine_7": {
+        "retention_trace": 0.12871065729903425,
+        "rmse_combined": 0.00261854268440449,
+        "failure_rate": 0.0
+      }
+    }
+  },
+  "negative_control": {
+    "zero_coordinate_retention_for_zero_preserving_deformation": 0.0,
+    "conclusion": "representation limit preserved"
+  },
+  "self_checks": {
+    "gate1_compatibility": true,
+    "zero_invariance": true,
+    "fisher_symmetry": true,
+    "fisher_psd": true,
+    "ideal_retention_bound": true
+  }
+}
