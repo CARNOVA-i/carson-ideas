@@ -20,8 +20,12 @@ Current phase:
 - The 14-value gain-invariant descriptor retained 8.84% joint information and only about 0.01% for its weakest zero-preserving mode
 - The normalized 5x5 complex patch retained 7.70% joint information, so global field context remained necessary for the admitted deformation modes
 - No tested state met the 90% joint target or the 70% per-parameter floor
+- Simulation Gate 3 completed: **FAIL** for the tested distributed product-field coordinate network
+- Best result was optimized N=1 at 15.98% practical joint retention and 1.21% worst-mode retention
+- Larger networks did not improve retention and practical tracking failure became severe at N=8 and N=16
+- Placement mattered modestly at small N but did not rescue the architecture
 - Full application-specific mathematical framework pending
 - Further simulation pending
 - Experimental validation pending
 
-No 3D simulation or experiment has been performed. No theory paper has been written. Simulation Gate 1 remains historically `HOLD`; Gate 1B passes only its narrower information-ceiling question; Gate 2 fails for the tested broader local-state architecture. The novelty verdict is provisional and evidence-bounded, not a patentability opinion or a claim of novelty.
+No 3D simulation or experiment has been performed. No hardware was designed and no theory paper was written. Gate 3 fails only for the tested distributed product-field coordinate network. The novelty verdict remains provisional and evidence-bounded.

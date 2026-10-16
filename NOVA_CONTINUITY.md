@@ -14,9 +14,7 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 ## Current objective
 
-The next planned research question is Simulation Gate 3: Distributed Singularity Network. It has not started and requires separate Carson authorization.
-
-At high level, Gate 3 would test whether multiple spatially separated singularities, treated collectively as a distributed state, can recover the multi-mode information that local single-singularity descriptors failed to preserve.
+Simulation Gate 3 has been performed locally and awaits Carson's review. Verdict: **FAIL** for the tested distributed product-field coordinate network.
 
 ## Current state
 
@@ -80,13 +78,15 @@ At high level, Gate 3 would test whether multiple spatially separated singularit
 - Strongest Gate 2 negative result: that descriptor retained only 8.84% joint information and effectively lost the zero-preserving modes.
 - Gate 2's **FAIL** is limited to the tested local compact architecture and does not extend automatically to distributed or multi-singularity architectures.
 - No 3D simulation or experiment was performed, no hardware was designed, and no paper was written.
-- Simulation Gate 3 has not started.
+- Gate 3 baseline: `19c1822e5e44c4d7255e2ce94cd0d769f098a919`; counts 1, 2, 4, 8, 16; placements naive, diverse, optimized; 36,000 paired trials.
+- Best result: optimized N=1, 15.98% practical joint retention, 1.21% worst-mode retention, dimension 2, and 961x post-extraction reduction.
+- Strongest positive result: placement changed small-N response and gain invariance held.
+- Strongest negative result: count did not improve retention and tracking failure became severe for crowded networks.
+- No 3D work, experiment, hardware design, paper drafting, commit, or push occurred for Gate 3.
 
 ## Ordered next actions
 
-1. Await Carson's authorization for Simulation Gate 3: Distributed Singularity Network.
-2. If authorized, define a bounded 2D multi-singularity field architecture.
-3. Test whether collective singularity displacement/state recovers zero-moving and zero-preserving modes.
-4. Compare information retention versus singularity count and placement.
-5. Do not begin 3D work, experiment, hardware design, or paper drafting without separate authorization.
-6. Commit or push only with explicit authorization.
+1. Carson reviews the Gate 3 `FAIL` evidence.
+2. Do not proceed to 3D, experiment, hardware, or paper drafting.
+3. Any reformulation requires separate authorization and must change the field architecture or distributed statistic materially.
+4. Commit or push only with explicit authorization.

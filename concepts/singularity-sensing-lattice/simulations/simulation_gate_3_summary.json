@@ -1,0 +1,307 @@
+{
+  "seed": 20261015,
+  "trials_per_condition": 100,
+  "conditions": 360,
+  "total_paired_trials": 36000,
+  "field": "normalized Gaussian-envelope product of controlled simple vortices",
+  "parameters": [
+    "dx",
+    "dy",
+    "alpha",
+    "beta"
+  ],
+  "counts": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "placements": [
+    "naive",
+    "diverse",
+    "optimized"
+  ],
+  "decision": {
+    "joint": 0.9,
+    "worst": 0.7,
+    "max_N": 16
+  },
+  "overall": {
+    "naive": {
+      "1": {
+        "state_dimension": 2,
+        "compression_ratio": 961.0,
+        "ideal_joint_retention": 0.12242454164426486,
+        "practical_joint_retention": 0.11768860119562936,
+        "per_parameter": {
+          "dx": 0.011527077286589431,
+          "dy": 0.01666805911634549,
+          "alpha": 0.011527077286670318,
+          "beta": 0.01666805911641038
+        },
+        "worst_parameter": 0.011527077286589431,
+        "failure_rate": 0.09708333333333334,
+        "extraction_loss": 0.004735940448635499,
+        "total_runtime_ms": 0.4646961666549032
+      },
+      "2": {
+        "state_dimension": 4,
+        "compression_ratio": 480.5,
+        "ideal_joint_retention": 0.015289368958323432,
+        "practical_joint_retention": 0.015191704644364834,
+        "per_parameter": {
+          "dx": 0.010620632039080957,
+          "dy": 0.010877010358057557,
+          "alpha": 0.015203078542617245,
+          "beta": 0.02512955965913548
+        },
+        "worst_parameter": 0.010620632039080957,
+        "failure_rate": 0.13166666666666668,
+        "extraction_loss": 9.766431395859905e-05,
+        "total_runtime_ms": 0.8656877082254747
+      },
+      "4": {
+        "state_dimension": 8,
+        "compression_ratio": 240.25,
+        "ideal_joint_retention": 0.005656859616794689,
+        "practical_joint_retention": 0.003247325045996167,
+        "per_parameter": {
+          "dx": 0.00160348952796946,
+          "dy": 0.0017726828376183241,
+          "alpha": 0.0053072062061773895,
+          "beta": 0.004432546782692892
+        },
+        "worst_parameter": 0.00160348952796946,
+        "failure_rate": 0.4154166666666666,
+        "extraction_loss": 0.0024095345707985222,
+        "total_runtime_ms": 1.4756437915912102
+      },
+      "8": {
+        "state_dimension": 16,
+        "compression_ratio": 120.125,
+        "ideal_joint_retention": 0.0,
+        "practical_joint_retention": 0.0,
+        "per_parameter": {
+          "dx": 0.0,
+          "dy": 0.0,
+          "alpha": 0.0,
+          "beta": 0.0
+        },
+        "worst_parameter": 0.0,
+        "failure_rate": 0.9841666666666665,
+        "extraction_loss": 0.0,
+        "total_runtime_ms": 1.0997318334708932
+      },
+      "16": {
+        "state_dimension": 32,
+        "compression_ratio": 60.0625,
+        "ideal_joint_retention": 0.0,
+        "practical_joint_retention": 0.0,
+        "per_parameter": {
+          "dx": 0.0,
+          "dy": 0.0,
+          "alpha": 0.0,
+          "beta": 0.0
+        },
+        "worst_parameter": 0.0,
+        "failure_rate": 0.9991666666666666,
+        "extraction_loss": 0.0,
+        "total_runtime_ms": 1.0810577499675371
+      }
+    },
+    "diverse": {
+      "1": {
+        "state_dimension": 2,
+        "compression_ratio": 961.0,
+        "ideal_joint_retention": 0.1574585275699095,
+        "practical_joint_retention": 0.1542765322596005,
+        "per_parameter": {
+          "dx": 0.015563986692077461,
+          "dy": 0.01339527445081926,
+          "alpha": 0.01339527445077838,
+          "beta": 0.015563986692089388
+        },
+        "worst_parameter": 0.01339527445077838,
+        "failure_rate": 0.08333333333333333,
+        "extraction_loss": 0.0031819953103089924,
+        "total_runtime_ms": 0.4664746666882517
+      },
+      "2": {
+        "state_dimension": 4,
+        "compression_ratio": 480.5,
+        "ideal_joint_retention": 0.024269937262964964,
+        "practical_joint_retention": 0.022871875447938072,
+        "per_parameter": {
+          "dx": 0.0059898353352549165,
+          "dy": 0.005519090196425013,
+          "alpha": 0.010366791207449906,
+          "beta": 0.009168566605446115
+        },
+        "worst_parameter": 0.005519090196425013,
+        "failure_rate": 0.2808333333333333,
+        "extraction_loss": 0.0013980618150268916,
+        "total_runtime_ms": 0.835030833292573
+      },
+      "4": {
+        "state_dimension": 8,
+        "compression_ratio": 240.25,
+        "ideal_joint_retention": 0.0411031968113938,
+        "practical_joint_retention": 0.01150820438356919,
+        "per_parameter": {
+          "dx": 0.008919427509016172,
+          "dy": 0.0031746246339407398,
+          "alpha": 0.02918336608796118,
+          "beta": 0.011406538848198491
+        },
+        "worst_parameter": 0.0031746246339407398,
+        "failure_rate": 0.80375,
+        "extraction_loss": 0.029594992427824613,
+        "total_runtime_ms": 0.9853766248670581
+      },
+      "8": {
+        "state_dimension": 16,
+        "compression_ratio": 120.125,
+        "ideal_joint_retention": 0.0,
+        "practical_joint_retention": 0.0,
+        "per_parameter": {
+          "dx": 0.0,
+          "dy": 0.0,
+          "alpha": 0.0,
+          "beta": 0.0
+        },
+        "worst_parameter": 0.0,
+        "failure_rate": 0.9641666666666667,
+        "extraction_loss": 0.0,
+        "total_runtime_ms": 1.1534045833862667
+      },
+      "16": {
+        "state_dimension": 32,
+        "compression_ratio": 60.0625,
+        "ideal_joint_retention": 0.0,
+        "practical_joint_retention": 0.0,
+        "per_parameter": {
+          "dx": 0.0,
+          "dy": 0.0,
+          "alpha": 0.0,
+          "beta": 0.0
+        },
+        "worst_parameter": 0.0,
+        "failure_rate": 1.0,
+        "extraction_loss": 0.0,
+        "total_runtime_ms": 1.0600435416472465
+      }
+    },
+    "optimized": {
+      "1": {
+        "state_dimension": 2,
+        "compression_ratio": 961.0,
+        "ideal_joint_retention": 0.17426691270165864,
+        "practical_joint_retention": 0.1597895829553551,
+        "per_parameter": {
+          "dx": 0.013594153335606263,
+          "dy": 0.013802128981622626,
+          "alpha": 0.015334433441037264,
+          "beta": 0.01206184887629251
+        },
+        "worst_parameter": 0.01206184887629251,
+        "failure_rate": 0.13041666666666665,
+        "extraction_loss": 0.014477329746303542,
+        "total_runtime_ms": 0.45065533350377035
+      },
+      "2": {
+        "state_dimension": 4,
+        "compression_ratio": 480.5,
+        "ideal_joint_retention": 0.0169920053280936,
+        "practical_joint_retention": 0.01669615581834317,
+        "per_parameter": {
+          "dx": 0.015214382920614894,
+          "dy": 0.015725584609929174,
+          "alpha": 0.023004351530665695,
+          "beta": 0.013640337310996113
+        },
+        "worst_parameter": 0.013640337310996113,
+        "failure_rate": 0.13416666666666668,
+        "extraction_loss": 0.0002958495097504296,
+        "total_runtime_ms": 0.8763957084405168
+      },
+      "4": {
+        "state_dimension": 8,
+        "compression_ratio": 240.25,
+        "ideal_joint_retention": 0.01230000044180154,
+        "practical_joint_retention": 0.012176428796420275,
+        "per_parameter": {
+          "dx": 0.007794413178849244,
+          "dy": 0.008971540598455882,
+          "alpha": 0.016395762151230422,
+          "beta": 0.019090185826610668
+        },
+        "worst_parameter": 0.007794413178849244,
+        "failure_rate": 0.2020833333333333,
+        "extraction_loss": 0.00012357164538126425,
+        "total_runtime_ms": 1.9166671667577855
+      },
+      "8": {
+        "state_dimension": 16,
+        "compression_ratio": 120.125,
+        "ideal_joint_retention": 2.4580478282228386e-05,
+        "practical_joint_retention": 2.269148155825691e-05,
+        "per_parameter": {
+          "dx": 4.198300640216279e-05,
+          "dy": 5.321217017704692e-05,
+          "alpha": 0.00012318971266240544,
+          "beta": 9.701055645335011e-05
+        },
+        "worst_parameter": 4.198300640216279e-05,
+        "failure_rate": 0.7729166666666666,
+        "extraction_loss": 1.8889967239714772e-06,
+        "total_runtime_ms": 1.867559291786165
+      },
+      "16": {
+        "state_dimension": 32,
+        "compression_ratio": 60.0625,
+        "ideal_joint_retention": 0.0,
+        "practical_joint_retention": 0.0,
+        "per_parameter": {
+          "dx": 0.0,
+          "dy": 0.0,
+          "alpha": 0.0,
+          "beta": 0.0
+        },
+        "worst_parameter": 0.0,
+        "failure_rate": 0.9991666666666666,
+        "extraction_loss": 0.0,
+        "total_runtime_ms": 1.1037694166922545
+      }
+    }
+  },
+  "best": {
+    "placement": "optimized",
+    "N": 1,
+    "state_dimension": 2,
+    "compression_ratio": 961.0,
+    "ideal_joint_retention": 0.17426691270165864,
+    "practical_joint_retention": 0.1597895829553551,
+    "per_parameter": {
+      "dx": 0.013594153335606263,
+      "dy": 0.013802128981622626,
+      "alpha": 0.015334433441037264,
+      "beta": 0.01206184887629251
+    },
+    "worst_parameter": 0.01206184887629251,
+    "failure_rate": 0.13041666666666665,
+    "extraction_loss": 0.014477329746303542,
+    "total_runtime_ms": 0.45065533350377035
+  },
+  "smallest_passing": null,
+  "verdict": "FAIL",
+  "self_checks": {
+    "full_fisher_symmetry": true,
+    "full_fisher_psd": true,
+    "full_rank": true,
+    "gain_invariance": true,
+    "count_stable": true,
+    "assignment_correct": true
+  },
+  "deterministic_digest_excluding_timing": "00e85f5cb7e830560f4086001bdeb3913774b65d2762bcaf2248f8282e57f0ff"
+}

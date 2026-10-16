@@ -35,6 +35,17 @@ These Gate 1B findings classify the representation as sufficient for the exact b
 
 These results reject the tested local singularity-centered states, not every possible compact statistic or engineered multi-singularity architecture.
 
+## Evidence from bounded Simulation Gate 3
+
+- **Contradicted for the tested network:** Distributed coordinates did not preserve most four-mode information; the best practical joint retention was 15.98%.
+- **Unsupported as a count advantage:** Increasing N did not improve retention and crowded networks became practically untrackable.
+- **Partially supported for placement diversity:** Placement changed small-N retention, but no geometry approached the decision thresholds.
+- **Supported in the noiseless implementation:** Coordinate extraction remained invariant to tested nonzero global complex gain.
+- **Contradicted for practical extraction stability:** Failure averaged 77.29% at optimized N=8 and 99.92% at N=16.
+- **Still unverified:** A fundamentally different field architecture or non-coordinate distributed statistic could behave differently.
+
+These findings do not prove that every distributed sensing architecture must fail.
+
 ## Established in related systems
 
 - **Phase singularities can be deliberately generated and spatially arranged.** Optical metasurface experiments have produced point arrays and sheet structures.
