@@ -6,14 +6,17 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 ## Repository state
 
-- Branch `main` tracks `origin/main` at commit `4502de440d75753e21e9a0b572742284c817b931`, `Complete Simulation Gate 1B information ceiling analysis`.
+- Branch `main` tracks `origin/main` at commit `321c696a15c86faef83cddc736e4bee07660bfbd`, `Complete Simulation Gate 2 multi-mode compact-state analysis`.
 - The novelty review and Theory Gate 1 are published and verified.
 - Simulation Gate 1 is published and verified with verdict **HOLD** at the synchronized baseline `54f371a357039ad492dfda9b691b62e481ee5644`.
 - Simulation Gate 1B is published and verified with verdict **PASS**, narrowly for the bounded translation information-ceiling question. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
+- Simulation Gate 2 is published and verified with verdict **FAIL** for the tested local compact singularity-centered architecture in the bounded four-parameter 2D task. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
 
 ## Current objective
 
-Simulation Gate 2: Multi-Mode Compact State has been performed locally and is awaiting Carson's review. Verdict: **FAIL** for the tested local compact-state architecture.
+The next planned research question is Simulation Gate 3: Distributed Singularity Network. It has not started and requires separate Carson authorization.
+
+At high level, Gate 3 would test whether multiple spatially separated singularities, treated collectively as a distributed state, can recover the multi-mode information that local single-singularity descriptors failed to preserve.
 
 ## Current state
 
@@ -49,6 +52,7 @@ Simulation Gate 2: Multi-Mode Compact State has been performed locally and is aw
 - Simulation Gate 1B publication, commit identity, clean state, and remote synchronization were verified at `4502de440d75753e21e9a0b572742284c817b931`.
 - Simulation Gate 2 used baseline `f6106b5e75396646f88eaa9ebd10a31943fcaddc`, parameters `[dx,dy,alpha,beta]`, 2,400 paired trials, and state dimensions 2, 6, 14, 50, and 1,922.
 - Gate 2 verdict: **FAIL**. The best tested state with at most 20 values was S14 at 8.84% joint retention; its weakest parameter retained about 0.01%.
+- Simulation Gate 2 publication, commit identity, clean state, and remote synchronization were verified at `321c696a15c86faef83cddc736e4bee07660bfbd`, `Complete Simulation Gate 2 multi-mode compact-state analysis`.
 
 ## Open issues / risks
 
@@ -60,7 +64,7 @@ Simulation Gate 2: Multi-Mode Compact State has been performed locally and is aw
 - Strongest positive result: local identifiability is achievable for restricted models when the defined feature coordinates yield a full-column-rank, noise-weighted sensitivity matrix.
 - Strongest failure risk: a state extracted from the same complete field cannot exceed full-field information, while near-singular spatial Jacobians amplify localization noise and generic 3D scalar-field zeros form lines rather than isolated points.
 - Gate 2 locality result: the normalized 5x5 patch retained 7.70% joint information, classifying global field context as necessary for the admitted deformation modes.
-- Gate 2 timing result: the implemented compact pipeline showed no total-pipeline computational advantage over the local full-field GLS benchmark.
+- Gate 2 timing result: the implemented compact pipeline showed no total-pipeline computational advantage over the local full-field GLS benchmark, and no local acquisition advantage was demonstrated.
 - Further mathematical framework, simulation, and experimental validation remain pending.
 - Theory Gate 1 itself contained no numerical simulation; Simulation Gate 1 now supplies bounded 2D numerical evidence. No theory paper has been written.
 - Strongest Simulation Gate 1 positive result: the two-coordinate state was exactly common-gain invariant in the noiseless model, compressed 1,922 real samples to 2 post-extraction values, and required about one thirteenth of the estimator runtime in the authoritative recorded invocation.
@@ -74,11 +78,15 @@ Simulation Gate 2: Multi-Mode Compact State has been performed locally and is aw
 - The principal Gate 1 bottleneck is extraction, not representation, for the bounded translation model.
 - Strongest Gate 2 positive result: a deterministic 14-value gain-invariant descriptor was measurable without extraction failures.
 - Strongest Gate 2 negative result: that descriptor retained only 8.84% joint information and effectively lost the zero-preserving modes.
-- No 3D simulation or experiment was performed, no paper was written, and no Gate 2 commit or push has occurred.
+- Gate 2's **FAIL** is limited to the tested local compact architecture and does not extend automatically to distributed or multi-singularity architectures.
+- No 3D simulation or experiment was performed, no hardware was designed, and no paper was written.
+- Simulation Gate 3 has not started.
 
 ## Ordered next actions
 
-1. Carson reviews the Gate 2 evidence and `FAIL` verdict.
-2. Do not proceed to 3D, experiment, paper drafting, or hardware.
-3. If separately authorized, consider a bounded reformulation using deliberately nonlocal summaries or multiple spatially separated singularities.
-4. Commit or push only with explicit authorization. No commit or push has occurred for Gate 2.
+1. Await Carson's authorization for Simulation Gate 3: Distributed Singularity Network.
+2. If authorized, define a bounded 2D multi-singularity field architecture.
+3. Test whether collective singularity displacement/state recovers zero-moving and zero-preserving modes.
+4. Compare information retention versus singularity count and placement.
+5. Do not begin 3D work, experiment, hardware design, or paper drafting without separate authorization.
+6. Commit or push only with explicit authorization.
