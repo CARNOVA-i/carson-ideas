@@ -46,6 +46,18 @@ These results reject the tested local singularity-centered states, not every pos
 
 These findings do not prove that every distributed sensing architecture must fail.
 
+## Evidence from Theory Gate 2
+
+- **Supported analytically for the admitted field:** The exact singularity location provides the translation coordinates and a translation-invariant origin for centered deformation summaries.
+- **Supported analytically for local identifiability:** An `m=3/m=1` harmonic ratio responds to anisotropy, while an `m=1` cross-shell phase difference responds to radial phase curvature. Together with zero position, the four-real-value state has nominal rank four.
+- **Supported under explicit admissibility conditions:** The harmonic ratios cancel unknown nonzero global complex gain without cancelling first-order alpha or beta sensitivity. Denominators must remain above a noise floor, radii must be distinct, and beta must remain on an admitted phase branch.
+- **Partially supported for centering robustness:** Complete circular odd-harmonic summaries reject first-order centering leakage by angular-parity selection at the nominal point. Second-order error, incomplete sampling, clipping, and deformation cross-terms remain unverified.
+- **Supported only as candidate post-extraction compactness:** The minimal state has four real values, with six- to ten-value redundant variants plausible. No detector, acquisition, or computational compression has been demonstrated.
+- **Still unverified:** Noise-weighted conditioning, retained efficient information, finite angular sampling, realistic correlated summary noise, and performance across the bounded operating region.
+- **Unsupported as a special-spacing claim:** No analytical term in the admitted field privileges golden-ratio radii over uniform, ordinary geometric, or criterion-optimized spacing.
+
+Theory Gate 2 supports a bounded simulation of nonlocal modal summaries, not a claim of practical advantage or a general sensing architecture.
+
 ## Established in related systems
 
 - **Phase singularities can be deliberately generated and spatially arranged.** Optical metasurface experiments have produced point arrays and sheet structures.

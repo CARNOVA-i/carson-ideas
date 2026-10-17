@@ -6,7 +6,7 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 ## Repository state
 
-- Branch `main` tracks `origin/main` at commit `eb98c1cd1ce7981961681377c9d2e79ee97ab84c`, `Complete Simulation Gate 3 distributed network analysis`; divergence is `0/0` and the worktree and index are clean.
+- Branch `main` tracks `origin/main` at published baseline `a199d1a49c4e0bb5203df3b7fd2c686e79921a8a`, `Update continuity after Simulation Gate 3 publication`; divergence is `0/0`. The worktree contains only the uncommitted Theory Gate 2 report and required bookkeeping updates, and the index is clean.
 - The novelty review and Theory Gate 1 are published and verified.
 - Simulation Gate 1 is published and verified with verdict **HOLD** at the synchronized baseline `54f371a357039ad492dfda9b691b62e481ee5644`.
 - Simulation Gate 1B is published and verified with verdict **PASS**, narrowly for the bounded translation information-ceiling question. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
@@ -15,9 +15,7 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 ## Current objective
 
-The next planned research phase is Theory Gate 2: Singularity-Anchored Multiscale Sampling. It has not started and requires separate Carson authorization.
-
-At high level, Theory Gate 2 would test whether a singularity can serve as a spatial reference origin for a sparse set of nonlocal multiscale field summaries, and whether those summaries can retain deformation information that local descriptors and coordinate networks failed to preserve. Candidate spacing families may later include uniform, logarithmic, golden-ratio, and optimized spacing; no spacing family is currently privileged or claimed superior.
+Theory Gate 2 has been performed locally and awaits Carson's review. Verdict: **CONDITIONAL PASS**. Golden-ratio spacing sub-verdict: **NO SPECIAL ADVANTAGE FOUND**.
 
 ## Current state
 
@@ -31,6 +29,7 @@ At high level, Theory Gate 2 would test whether a singularity can serve as a spa
 - `simulation-gate-1b.md`, `simulations/simulation_gate_1b.py`, generated result data, and generated figures decompose the translation-information ceiling from extractor loss.
 - `simulation-gate-2.md`, `simulations/simulation_gate_2.py`, generated result data, and generated figures test a four-parameter multi-mode family and a hierarchy of local compact states.
 - `simulation-gate-3.md`, `simulations/simulation_gate_3.py`, generated result data, and four generated figures test a distributed product-field singularity-coordinate network.
+- `theory-gate-2.md` derives singularity-anchored nonlocal modal summaries for the Gate 2 analytical field. No new simulation was run.
 
 ## Authorities / constraints / invariants
 
@@ -59,6 +58,13 @@ At high level, Theory Gate 2 would test whether a singularity can serve as a spa
 - Gate 3 verdict: **FAIL** for the tested distributed product-field singularity-coordinate network. The best configuration was optimized placement at N=1, with 15.98% practical joint retention, 17.43% ideal coordinate retention, and 1.21% worst required-parameter retention.
 - Optimized tracking failure reached 77.29% at N=8 and 99.92% at N=16. Placement affected small-network response and tested global-gain invariance held, but additional singularities did not improve useful relative information. The ideal coordinate ceiling was already weak, and extraction was not the only bottleneck.
 - Simulation Gate 3 publication, commit identity, clean state, and remote synchronization were verified at `eb98c1cd1ce7981961681377c9d2e79ee97ab84c`, `Complete Simulation Gate 3 distributed network analysis`.
+- Theory Gate 2 baseline: `a199d1a49c4e0bb5203df3b7fd2c686e79921a8a`.
+- Field family: translated charge-one Gaussian-envelope vortex with anisotropy `alpha`, radial phase curvature `beta`, and unknown nonzero global complex gain.
+- Derived couplings: zero position carries `[dx,dy]`; the `m=3/m=1` harmonic ratio carries `alpha`; cross-shell `m=1` phase slope carries `beta`.
+- Minimal candidate state: four real values. Its nominal sensitivity matrix is `diag(1,1,-rho_a/4,1)`, full rank for every admitted `r_a>0`.
+- Conditioning result: algebraic scaling can be balanced, but noise-weighted conditioning and retained information remain unverified.
+- Centering result: complete circular odd-harmonic summaries reject first-order centering leakage at the nominal point by parity; practical and higher-order sensitivity remain unresolved.
+- Theory Gate 2 verdict: **CONDITIONAL PASS**. Golden-ratio sub-verdict: **NO SPECIAL ADVANTAGE FOUND**.
 
 ## Open issues / risks
 
@@ -95,12 +101,17 @@ At high level, Theory Gate 2 would test whether a singularity can serve as a spa
 - Any further research must materially change the retained statistic or field architecture rather than merely refine the failed coordinate-network line.
 - Gate 3's **FAIL** does not automatically extend to all distributed sensing architectures, all multi-singularity field architectures, non-coordinate distributed statistics, singularity-anchored multiscale sampling, or alternative sparse nonlocal summaries.
 - No 3D work, experiment, hardware design, or paper drafting occurred for Gate 3.
+- Strongest Theory Gate 2 positive result: a gain-invariant four-real-value state is explicitly defined and locally full rank, with translation, anisotropy, and radial phase curvature separated into distinct channels.
+- Strongest Theory Gate 2 negative result: useful noise-weighted conditioning and information retention are not established, and the beta channel is phase wrapped without an admitted bound or unwrapping rule.
+- The singularity can serve as an analytical reference origin even though coordinate-only states failed. Nonlocal deformation sensitivity grows as `r^2` relative to the field near the zero, explaining the local-state failure and motivating shell summaries.
+- No special analytical advantage was found for golden-ratio spacing. Optimized radii require an explicit noise model and objective.
+- No new simulation, 3D work, experiment, hardware design, or paper drafting occurred for Theory Gate 2. No commit or push occurred.
 
 ## Ordered next actions
 
-1. Await Carson's authorization for Theory Gate 2: Singularity-Anchored Multiscale Sampling.
-2. If authorized, derive which nonlocal radial and angular summaries couple to the target perturbation modes.
-3. Determine whether sparse multiscale sampling can be identifiable before any new simulation.
-4. Compare candidate spacing principles theoretically, including uniform, logarithmic, golden-ratio, and optimized spacing, without presuming any is privileged.
-5. Do not begin new simulation, 3D work, experiment, hardware design, or paper drafting without separate authorization.
+1. Carson reviews the Theory Gate 2 derivation and its **CONDITIONAL PASS** verdict.
+2. If separately authorized, define a bounded 2D simulation comparing the four-value state and small redundant variants against the efficient full-field benchmark.
+3. Predefine radius bounds, angular sampling, denominator floors, beta phase range, centering perturbations, summary covariance, and one common spacing-selection criterion.
+4. Compare uniform, ordinary geometric, golden-ratio, and optimized radii without assuming a golden-ratio advantage.
+5. Do not begin simulation, 3D work, experiment, hardware design, or paper drafting without separate authorization.
 6. Commit or push only with explicit authorization.

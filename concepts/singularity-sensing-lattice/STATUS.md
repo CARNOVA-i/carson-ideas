@@ -24,8 +24,12 @@ Current phase:
 - Best result was optimized N=1 at 15.98% practical joint retention and 1.21% worst-mode retention
 - Larger networks did not improve retention and practical tracking failure became severe at N=8 and N=16
 - Placement mattered modestly at small N but did not rescue the architecture
+- Theory Gate 2 completed: **CONDITIONAL PASS** for singularity-anchored nonlocal multiscale summaries
+- The exact Gate 2 field admits a four-real-value, gain-invariant, locally full-rank state: zero position for translation, an `m=3/m=1` harmonic ratio for anisotropy, and an `m=1` cross-shell phase slope for radial phase curvature
+- Noise-weighted conditioning, phase wrapping, finite angular sampling, and practical centering error remain unresolved and require a separately authorized bounded simulation
+- Golden-ratio spacing: **NO SPECIAL ADVANTAGE FOUND**; the analytical model does not privilege `phi` over uniform, ordinary geometric, or model-optimized radii
 - Full application-specific mathematical framework pending
 - Further simulation pending
 - Experimental validation pending
 
-No 3D simulation or experiment has been performed. No hardware was designed and no theory paper was written. Gate 3 fails only for the tested distributed product-field coordinate network. The novelty verdict remains provisional and evidence-bounded.
+No new simulation, 3D work, or experiment was performed for Theory Gate 2. No hardware was designed and no theory paper was written. Gate 3 still fails only for the tested distributed product-field coordinate network. The novelty verdict remains provisional and evidence-bounded.
