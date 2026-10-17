@@ -6,16 +6,19 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 ## Repository state
 
-- Branch `main` tracks `origin/main` at published baseline `a199d1a49c4e0bb5203df3b7fd2c686e79921a8a`, `Update continuity after Simulation Gate 3 publication`; divergence is `0/0`. The worktree contains only the uncommitted Theory Gate 2 report and required bookkeeping updates, and the index is clean.
+- Branch `main` tracks `origin/main` at commit `2c21ab245761a512c5e109b71dd57117d4ebee22`, `Complete Theory Gate 2 multiscale sampling analysis`; divergence is `0/0` and the published worktree and index state is clean.
 - The novelty review and Theory Gate 1 are published and verified.
 - Simulation Gate 1 is published and verified with verdict **HOLD** at the synchronized baseline `54f371a357039ad492dfda9b691b62e481ee5644`.
 - Simulation Gate 1B is published and verified with verdict **PASS**, narrowly for the bounded translation information-ceiling question. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
 - Simulation Gate 2 is published and verified with verdict **FAIL** for the tested local compact singularity-centered architecture in the bounded four-parameter 2D task. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
 - Simulation Gate 3 is published and verified with verdict **FAIL** for the tested distributed product-field singularity-coordinate network in the bounded four-parameter 2D task.
+- Theory Gate 2 is published and verified with verdict **CONDITIONAL PASS**. Golden-ratio spacing sub-verdict: **NO SPECIAL ADVANTAGE FOUND**.
 
 ## Current objective
 
-Theory Gate 2 has been performed locally and awaits Carson's review. Verdict: **CONDITIONAL PASS**. Golden-ratio spacing sub-verdict: **NO SPECIAL ADVANTAGE FOUND**.
+The next planned research phase is Simulation Gate 4: Singularity-Anchored Multiscale State. It has not started and requires separate Carson authorization.
+
+At high level, Simulation Gate 4 would test whether the analytically derived compact multiscale states, including S4 and small redundant variants, preserve useful information relative to the efficient full-field benchmark under noise, centering error, finite angular sampling, and candidate radial-spacing strategies. Candidate spacing families may include uniform, ordinary geometric or logarithmic, golden-ratio, and optimized radii; golden-ratio spacing has no presumed privilege.
 
 ## Current state
 
@@ -65,6 +68,7 @@ Theory Gate 2 has been performed locally and awaits Carson's review. Verdict: **
 - Conditioning result: algebraic scaling can be balanced, but noise-weighted conditioning and retained information remain unverified.
 - Centering result: complete circular odd-harmonic summaries reject first-order centering leakage at the nominal point by parity; practical and higher-order sensitivity remain unresolved.
 - Theory Gate 2 verdict: **CONDITIONAL PASS**. Golden-ratio sub-verdict: **NO SPECIAL ADVANTAGE FOUND**.
+- Theory Gate 2 publication, commit identity, clean state, and remote synchronization were verified at `2c21ab245761a512c5e109b71dd57117d4ebee22`, `Complete Theory Gate 2 multiscale sampling analysis`.
 
 ## Open issues / risks
 
@@ -103,15 +107,20 @@ Theory Gate 2 has been performed locally and awaits Carson's review. Verdict: **
 - No 3D work, experiment, hardware design, or paper drafting occurred for Gate 3.
 - Strongest Theory Gate 2 positive result: a gain-invariant four-real-value state is explicitly defined and locally full rank, with translation, anisotropy, and radial phase curvature separated into distinct channels.
 - Strongest Theory Gate 2 negative result: useful noise-weighted conditioning and information retention are not established, and the beta channel is phase wrapped without an admitted bound or unwrapping rule.
+- Minimal candidate state: `S4=[x_s,y_s,D_alpha,D_beta]`, dimension 4 real values, with nominal sensitivity matrix `diag(1,1,-rho_a/4,1)` and rank 4 for every admitted nonzero anisotropy-summary radius.
+- Translation/deformation factorization is exact under correctly centered analytical coordinates. The alpha channel is a gain-invariant `m=3/m=1` harmonic ratio; the beta channel is a gain-invariant cross-shell `m=1` phase slope.
 - The singularity can serve as an analytical reference origin even though coordinate-only states failed. Nonlocal deformation sensitivity grows as `r^2` relative to the field near the zero, explaining the local-state failure and motivating shell summaries.
 - No special analytical advantage was found for golden-ratio spacing. Optimized radii require an explicit noise model and objective.
-- No new simulation, 3D work, experiment, hardware design, or paper drafting occurred for Theory Gate 2. No commit or push occurred.
+- Useful information retention and noise-weighted conditioning remain unverified. Beta phase wrapping remains unresolved without admitted bounds or an unwrapping rule. Higher-order centering error and imperfect angular sampling also remain unresolved.
+- Direct acquisition is plausible in principle only; no feasibility or advantage was demonstrated.
+- No new simulation, 3D work, experiment, hardware design, or paper drafting occurred for Theory Gate 2.
 
 ## Ordered next actions
 
-1. Carson reviews the Theory Gate 2 derivation and its **CONDITIONAL PASS** verdict.
-2. If separately authorized, define a bounded 2D simulation comparing the four-value state and small redundant variants against the efficient full-field benchmark.
-3. Predefine radius bounds, angular sampling, denominator floors, beta phase range, centering perturbations, summary covariance, and one common spacing-selection criterion.
-4. Compare uniform, ordinary geometric, golden-ratio, and optimized radii without assuming a golden-ratio advantage.
-5. Do not begin simulation, 3D work, experiment, hardware design, or paper drafting without separate authorization.
-6. Commit or push only with explicit authorization.
+1. Await Carson's authorization for Simulation Gate 4: Singularity-Anchored Multiscale State.
+2. If authorized, define bounded 2D tests for S4 and small redundant states.
+3. Predefine radius bounds, angular sampling, denominator floors, beta phase range, centering perturbations, and summary covariance handling.
+4. Compare uniform, ordinary geometric or logarithmic, golden-ratio, and optimized radii without assuming any special golden-ratio advantage.
+5. Benchmark compact-state information retention against the efficient full-field reference.
+6. Do not begin 3D work, experiment, hardware design, or paper drafting without separate authorization.
+7. Commit or push only with explicit authorization.
