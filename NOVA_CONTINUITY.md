@@ -6,15 +6,18 @@ Maintain a public-facing archive for Carson's engineering concepts, theory work,
 
 ## Repository state
 
-- Branch `main` tracks `origin/main` at commit `321c696a15c86faef83cddc736e4bee07660bfbd`, `Complete Simulation Gate 2 multi-mode compact-state analysis`.
+- Branch `main` tracks `origin/main` at commit `eb98c1cd1ce7981961681377c9d2e79ee97ab84c`, `Complete Simulation Gate 3 distributed network analysis`; divergence is `0/0` and the worktree and index are clean.
 - The novelty review and Theory Gate 1 are published and verified.
 - Simulation Gate 1 is published and verified with verdict **HOLD** at the synchronized baseline `54f371a357039ad492dfda9b691b62e481ee5644`.
 - Simulation Gate 1B is published and verified with verdict **PASS**, narrowly for the bounded translation information-ceiling question. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
 - Simulation Gate 2 is published and verified with verdict **FAIL** for the tested local compact singularity-centered architecture in the bounded four-parameter 2D task. The worktree and index are clean, with `main` and `origin/main` at `0/0` divergence.
+- Simulation Gate 3 is published and verified with verdict **FAIL** for the tested distributed product-field singularity-coordinate network in the bounded four-parameter 2D task.
 
 ## Current objective
 
-Simulation Gate 3 has been performed locally and awaits Carson's review. Verdict: **FAIL** for the tested distributed product-field coordinate network.
+The next planned research phase is Theory Gate 2: Singularity-Anchored Multiscale Sampling. It has not started and requires separate Carson authorization.
+
+At high level, Theory Gate 2 would test whether a singularity can serve as a spatial reference origin for a sparse set of nonlocal multiscale field summaries, and whether those summaries can retain deformation information that local descriptors and coordinate networks failed to preserve. Candidate spacing families may later include uniform, logarithmic, golden-ratio, and optimized spacing; no spacing family is currently privileged or claimed superior.
 
 ## Current state
 
@@ -27,6 +30,7 @@ Simulation Gate 3 has been performed locally and awaits Carson's review. Verdict
 - `simulation-gate-1.md`, `simulations/simulation_gate_1.py`, generated result data, and generated figures record a matched-data 2D translation comparison.
 - `simulation-gate-1b.md`, `simulations/simulation_gate_1b.py`, generated result data, and generated figures decompose the translation-information ceiling from extractor loss.
 - `simulation-gate-2.md`, `simulations/simulation_gate_2.py`, generated result data, and generated figures test a four-parameter multi-mode family and a hierarchy of local compact states.
+- `simulation-gate-3.md`, `simulations/simulation_gate_3.py`, generated result data, and four generated figures test a distributed product-field singularity-coordinate network.
 
 ## Authorities / constraints / invariants
 
@@ -51,6 +55,10 @@ Simulation Gate 3 has been performed locally and awaits Carson's review. Verdict
 - Simulation Gate 2 used baseline `f6106b5e75396646f88eaa9ebd10a31943fcaddc`, parameters `[dx,dy,alpha,beta]`, 2,400 paired trials, and state dimensions 2, 6, 14, 50, and 1,922.
 - Gate 2 verdict: **FAIL**. The best tested state with at most 20 values was S14 at 8.84% joint retention; its weakest parameter retained about 0.01%.
 - Simulation Gate 2 publication, commit identity, clean state, and remote synchronization were verified at `321c696a15c86faef83cddc736e4bee07660bfbd`, `Complete Simulation Gate 2 multi-mode compact-state analysis`.
+- Simulation Gate 3 used baseline `19c1822e5e44c4d7255e2ce94cd0d769f098a919`, parameters `[dx,dy,alpha,beta]`, singularity counts 1, 2, 4, 8, and 16, three placement strategies, and 36,000 paired trials.
+- Gate 3 verdict: **FAIL** for the tested distributed product-field singularity-coordinate network. The best configuration was optimized placement at N=1, with 15.98% practical joint retention, 17.43% ideal coordinate retention, and 1.21% worst required-parameter retention.
+- Optimized tracking failure reached 77.29% at N=8 and 99.92% at N=16. Placement affected small-network response and tested global-gain invariance held, but additional singularities did not improve useful relative information. The ideal coordinate ceiling was already weak, and extraction was not the only bottleneck.
+- Simulation Gate 3 publication, commit identity, clean state, and remote synchronization were verified at `eb98c1cd1ce7981961681377c9d2e79ee97ab84c`, `Complete Simulation Gate 3 distributed network analysis`.
 
 ## Open issues / risks
 
@@ -82,11 +90,17 @@ Simulation Gate 3 has been performed locally and awaits Carson's review. Verdict
 - Best result: optimized N=1, 15.98% practical joint retention, 1.21% worst-mode retention, dimension 2, and 961x post-extraction reduction.
 - Strongest positive result: placement changed small-N response and gain invariance held.
 - Strongest negative result: count did not improve retention and tracking failure became severe for crowded networks.
-- No 3D work, experiment, hardware design, paper drafting, commit, or push occurred for Gate 3.
+- Direct distributed coordinate-feature acquisition is not justified by the Gate 3 result.
+- The present compact singularity-coordinate architecture line is no longer supported for the broader multi-mode task: Gate 2 rejected the tested local compact single-singularity states, and Gate 3 rejected the tested distributed product-field coordinate network.
+- Any further research must materially change the retained statistic or field architecture rather than merely refine the failed coordinate-network line.
+- Gate 3's **FAIL** does not automatically extend to all distributed sensing architectures, all multi-singularity field architectures, non-coordinate distributed statistics, singularity-anchored multiscale sampling, or alternative sparse nonlocal summaries.
+- No 3D work, experiment, hardware design, or paper drafting occurred for Gate 3.
 
 ## Ordered next actions
 
-1. Carson reviews the Gate 3 `FAIL` evidence.
-2. Do not proceed to 3D, experiment, hardware, or paper drafting.
-3. Any reformulation requires separate authorization and must change the field architecture or distributed statistic materially.
-4. Commit or push only with explicit authorization.
+1. Await Carson's authorization for Theory Gate 2: Singularity-Anchored Multiscale Sampling.
+2. If authorized, derive which nonlocal radial and angular summaries couple to the target perturbation modes.
+3. Determine whether sparse multiscale sampling can be identifiable before any new simulation.
+4. Compare candidate spacing principles theoretically, including uniform, logarithmic, golden-ratio, and optimized spacing, without presuming any is privileged.
+5. Do not begin new simulation, 3D work, experiment, hardware design, or paper drafting without separate authorization.
+6. Commit or push only with explicit authorization.
